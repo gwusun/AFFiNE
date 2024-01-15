@@ -8,7 +8,7 @@ permissions:
   security-events: write
 
 env:
-  BUILD_TYPE: ${{ github.event.inputs.build-type }}
+  BUILD_TYPE: stable
   DEBUG: napi:*
   APP_NAME: affine
   MACOSX_DEPLOYMENT_TARGET: '10.13'
