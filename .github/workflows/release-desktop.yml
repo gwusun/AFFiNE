@@ -1,28 +1,7 @@
 name: Release Desktop App
 
 on:
-  workflow_dispatch:
-    inputs:
-      build-type:
-        description: 'Build Type'
-        type: choice
-        required: true
-        default: canary
-        options:
-          - canary
-          - beta
-          - stable
-      is-draft:
-        description: 'Draft Release?'
-        type: boolean
-        required: true
-        default: true
-      is-pre-release:
-        description: 'Pre Release? (labeled as "PreRelease")'
-        type: boolean
-        required: true
-        default: true
-
+  push
 permissions:
   actions: write
   contents: write
